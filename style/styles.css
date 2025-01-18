@@ -1,19 +1,87 @@
+:root{
+    --main-color:#111010c0;
+    --black:#13131a;
+    --bg:#5959cd86;
+    --border:.1rem solid rgba(255, 255, 255, 0.582);
+}
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+body{
+    background: var(--bg);
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
 .cell{
-    width: 75px;
-    height: 75px;
+    width: 155px;
+    height: 155px;
     border: 2px solid;
     box-shadow: 0 0 0 2px;
-    line-height: 75px;
-    font-size: 50px;
+    line-height: 105px;
+    font-size: 100px;
     cursor: pointer;
+    margin-left: -80%;
+    
 }
 #gameContainer{
     font-family:"Permanent Marker", cursive;
     text-align: center;
 }
+#gameContainer h1 {
+    font-size: 800%;
+}
 #cellContainer{
-    display: grid;
+    display:grid;
     grid-template-columns: repeat(3, auto);
     width: 225px;
     margin: auto;
+}
+.footer{
+    padding: auto;
+    border-radius: 10px;
+    background:black;
+    text-align: center;
+}
+.btn{
+    background: var(--bg);
+    color: var(--main-color);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.footer{
+    background:var(--black);
+    text-align: center;
+}
+.footer .credit{
+    font-size: 2rem;
+    color:#fff;
+    font-weight: lighter;
+    padding:1.5rem;
+}
+
+.footer .credit span{
+    color:red;
 }
